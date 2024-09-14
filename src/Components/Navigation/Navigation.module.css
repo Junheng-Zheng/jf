@@ -4,7 +4,7 @@ nav {
     color: white;
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 10px 0px;
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensures nav stays on top */
@@ -16,6 +16,7 @@ nav p {
     color: #EBAC0A;
     font-weight: bold;
     margin: 0; /* To avoid any extra spacing */
+    padding-left: 20px;
 }
 
 /* Hamburger menu container */
@@ -23,6 +24,7 @@ nav p {
     display: flex;
     align-items: center;
     position: relative; /* Needed for the absolute dropdown to position relative to this container */
+    padding-right: 20px;
 }
 
 /* Hamburger icon */
@@ -65,16 +67,24 @@ nav p {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    gap: 7px;
     padding: 0;
     margin: 0;
     text-align: right;
+    padding:0px 20px;
 }
 
 .nav__content ul a {
     text-decoration: none;
     color: white;
     display: block;
+}
+
+.nav__content ul li:nth-child(2) a {
+    background-color: #EBAC0A;
+    display: inline-block;
+    padding:3px 10px;
+    border-radius: 10px;
 }
 
 /* Hide the checkbox (hamburger button toggle) */
@@ -85,6 +95,8 @@ input[type=checkbox] {
 /* When the checkbox is checked, the content expands */
 input[type=checkbox]:checked ~ .nav__content ul {
     max-height: 500px; /* Set a max-height large enough to fit the content */
+    padding-top:5px;
+    padding-bottom:10px;
 }
 
 /* Hamburger button animations */
