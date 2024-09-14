@@ -1,0 +1,71 @@
+nav {
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+    position: sticky;
+    top:0;
+}
+
+nav p{
+    font-size:20px;
+    color:#EBAC0A;
+    font-weight: bold;
+}
+
+.nav__ham{
+    align-items: right;
+    text-align: right;
+}
+
+.nav__hamburgerButton ul li {
+    width: 24px;
+    background-color: white;
+    height: 3px;
+    border-radius: 20px;
+    transition: all .3s ease;
+}
+
+.nav__hamburgerButton ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style: none;
+    align-items: end;
+}
+
+.nav__hamburgerButton li a{
+    text-decoration: none;
+}
+
+/* Initially, the content is hidden with a height of 0 and overflow set to hidden */
+.nav__content ul {
+    max-height: 0;
+    overflow: hidden;
+    transition: all .2s ease;
+    list-style: none;
+}
+
+/* Hide the checkbox (hamburger button toggle) */
+input[type=checkbox] {
+    display: none;
+}
+
+/* When the checkbox is checked, the content will smoothly expand */
+input[type=checkbox]:checked ~ .nav__content ul {
+    max-height: 500px;
+}
+
+input[type=checkbox]:checked + label ul .hamburgerButton__topStroke {
+    transform: rotate(45deg) translate(5px, 5px); 
+}
+
+input[type=checkbox]:checked + label ul .hamburgerButton__centerStroke {
+    opacity: 0;
+}
+
+input[type=checkbox]:checked + label ul .hamburgerButton__bottomStroke {
+    transform: rotate(-45deg) translate(5px, -5px); 
+}
