@@ -1,25 +1,31 @@
+/* Navbar container */
 nav {
     background-color: black;
     color: white;
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding:10px 20px;
+    padding: 10px 20px;
     position: sticky;
-    top:0
+    top: 0;
+    z-index: 1000; /* Ensures nav stays on top */
 }
 
-nav p{
-    font-size:20px;
-    color:#EBAC0A;
+/* Logo styling */
+nav p {
+    font-size: 20px;
+    color: #EBAC0A;
     font-weight: bold;
+    margin: 0; /* To avoid any extra spacing */
 }
 
-.nav__ham{
-    align-items: right;
-    text-align: right;
+/* Hamburger menu container */
+.nav__ham {
+    display: flex;
+    align-items: center;
+    position: relative; /* Needed for the absolute dropdown to position relative to this container */
 }
 
+/* Hamburger icon */
 .nav__hamburgerButton ul li {
     width: 24px;
     background-color: white;
@@ -34,18 +40,41 @@ nav p{
     gap: 4px;
     list-style: none;
     align-items: end;
+    margin: 0;
+    padding: 0;
 }
 
-.nav__hamburgerButton li a{
-    text-decoration: none;
+/* Dropdown content - positioned absolutely */
+.nav__content {
+    position: absolute;
+    top: 100%; /* Positions dropdown below the navbar */
+    right: 0;  /* Aligns dropdown to the right */
+    background-color: black;
+    width: 150px; /* Set a width for the dropdown */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1001; /* Dropdown above other elements */
 }
 
-/* Initially, the content is hidden with a height of 0 and overflow set to hidden */
+/* Initially, the content is hidden */
 .nav__content ul {
     max-height: 0;
     overflow: hidden;
-    transition: all .2s ease;
+    transition: all .3s ease;
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.nav__content ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
 }
 
 /* Hide the checkbox (hamburger button toggle) */
@@ -53,11 +82,12 @@ input[type=checkbox] {
     display: none;
 }
 
-/* When the checkbox is checked, the content will smoothly expand */
+/* When the checkbox is checked, the content expands */
 input[type=checkbox]:checked ~ .nav__content ul {
-    max-height: 500px;
+    max-height: 500px; /* Set a max-height large enough to fit the content */
 }
 
+/* Hamburger button animations */
 input[type=checkbox]:checked + label ul .hamburgerButton__topStroke {
     transform: rotate(45deg) translate(5px, 5px); 
 }
