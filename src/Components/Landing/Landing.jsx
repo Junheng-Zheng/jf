@@ -9,7 +9,7 @@ export const Landing = () => {
         </div>
         <div className={styles.landing__information}>
             <a href="#">View Gallery</a>
-            <img src="public/loading.gif"></img>
+            <img src="../../public/loading.gif"></img>
         </div>
     </div>
 }
