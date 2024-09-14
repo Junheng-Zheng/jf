@@ -2,7 +2,7 @@
     background-image: url("../../Assets/jflandingpage.jpg");
     background-repeat: no-repeat;
     background-size: cover; 
-    height:490px;
+    height:480px;
     display: flex;
     flex-direction: column;
     color:#FFA800;
