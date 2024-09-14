@@ -30,7 +30,7 @@ export const Homepageinfo = () => {
                     <p>Stephan Sanchez</p>
                 </div>
                 <button onClick={togglePlayPause}>
-                    {isPlaying ? '||' : '▶'}
+                    <img src = "./playpause.png" />
                 </button>
                 {/* <button onClick={restartSong}>
                     {'restart'}
