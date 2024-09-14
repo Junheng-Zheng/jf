@@ -1,5 +1,5 @@
 .landing{
-    background-image: url("../../Assets/jflandingpage.jpg");
+    background-image: url("../../Assets/image.png");
     background-repeat: no-repeat;
     background-size: cover; 
     height:480px;
@@ -18,12 +18,14 @@
 .landing__header h1{
     display: inline-block;
     font-size:80px;
+    font-weight: 500;
 }
 
 .landing__header h3{
     display: inline-block;
     font-size:30px;
     padding-bottom: 20px;
+    font-weight: 500;
 }
 
 .landing__information{
