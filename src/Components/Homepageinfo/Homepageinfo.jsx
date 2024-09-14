@@ -24,7 +24,7 @@ export const Homepageinfo = () => {
     return <div className={styles.homepageinfo}>
         <div className={styles.homepageinfo__widgets}>
             <div className={styles.homepageinfo__songWidget}>
-                <audio ref={audioRef} src="../../../public/Audio/stephansanchez.mp3" preload="auto" />
+                <audio ref={audioRef} src="public/stephansanchez.mp3" preload="auto" />
                 <div>
                     <h3>High</h3>
                     <p>Stephan Sanchez</p>

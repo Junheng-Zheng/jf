@@ -1,0 +1,47 @@
+.landing{
+    background-image: url("../../Assets/jflandingpage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height:490px;
+    display: flex;
+    flex-direction: column;
+    color:#FFA800;
+    padding:270px 20px 20px;
+}
+
+.landing__header{
+    display: flex;
+    margin:0px;
+    align-items: flex-end;
+}
+
+.landing__header h1{
+    display: inline-block;
+    font-size:80px;
+}
+
+.landing__header h3{
+    display: inline-block;
+    font-size:30px;
+    padding-bottom: 20px;
+}
+
+.landing__information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing__information a{
+    box-sizing: border-box;
+    color:white;
+    background-color: #FFA800;
+    padding:8px 15px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.landing__information img{
+    width:60px;
+}
