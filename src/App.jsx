@@ -4,7 +4,6 @@ import { Navigation } from "./Components/Navigation/Navigation"
 
 function App() {
   return <div className={styles.App}>
-      <p>Hello</p> 
       <Navigation />
     </div>;
 }
