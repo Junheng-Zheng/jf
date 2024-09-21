@@ -11,12 +11,13 @@ nav {
 }
 
 /* Logo styling */
-nav p {
+.nav__home {
     font-size: 20px;
     color: #EBAC0A;
     font-weight: bold;
     margin: 0; /* To avoid any extra spacing */
     padding-left: 20px;
+    text-decoration: none;
 }
 
 /* Hamburger menu container */
