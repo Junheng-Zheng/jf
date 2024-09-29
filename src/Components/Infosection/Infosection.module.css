@@ -42,6 +42,7 @@
     margin:0;
     flex-wrap: nowrap;
     color:#FFA800;
+    margin-top:-9px;
 }
 
 .landing__header h3{
