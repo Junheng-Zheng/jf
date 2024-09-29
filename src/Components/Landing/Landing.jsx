@@ -5,7 +5,7 @@ export const Landing = () => {
     return <div className={styles.landing}>
         <div className={styles.landing__header}>
            <h1>Fiona</h1>
-           <h3><em>+Jun</em></h3>
+           <h3>+Jun</h3>
         </div>
         <div className={styles.landing__information}>
             <a href="#">View Gallery</a>
