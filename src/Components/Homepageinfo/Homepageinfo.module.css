@@ -38,6 +38,9 @@
     font-size: 11px;
 }
 
+.postWidget__information p:nth-child(1){
+    visibility: hidden;
+}
 .homepageinfo__songWidget button{
     color:white;
     background-color:#EBAC0A;

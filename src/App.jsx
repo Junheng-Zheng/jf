@@ -5,13 +5,14 @@ import styles from "./App.module.css";
 import { Navigation } from "./Components/Navigation/Navigation";
 import { Landing } from "./Components/Landing/Landing";
 import { Homepageinfo } from "./Components/Homepageinfo/Homepageinfo";
-import Photogallery from "./Components/Photogallery/Photogallery"; // No curly braces
+import { Infosection } from "./Components/Infosection/Infosection";
 
 function HomePage() {
   return (
     <>
       <Landing />
       <Homepageinfo />
+      <Infosection />
     </>
   );
 }
@@ -23,7 +24,6 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="jf/" element={<HomePage />} />
-          <Route path="/photo-gallery" element={<Photogallery />} />
         </Routes>
       </div>
     </Router>
