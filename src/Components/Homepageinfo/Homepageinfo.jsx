@@ -29,8 +29,14 @@ export const Homepageinfo = () => {
                     <h3>High</h3>
                     <p>Stephan Sanchez</p>
                 </div>
-                <button onClick={togglePlayPause}>
-                    <img src = "./playpause.png" />
+                <button 
+                    className={`${styles.playPauseButton} ${isPlaying ? styles.playing : ''}`} 
+                    onClick={togglePlayPause}
+                >
+                     <img 
+                            src={isPlaying ? "./play.png" : "./pause.png"} 
+                            alt={isPlaying ? "./pause.png" : "Play"} 
+                        />
                 </button>
                 {/* <button onClick={restartSong}>
                     {'restart'}

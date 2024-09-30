@@ -56,6 +56,15 @@
     text-align: center;
 }
 
+
+.playPauseButton {
+    transition: transform 0.1s ease;
+}
+
+.playPauseButton:active {
+    transform: scale(0.85);
+}
+
 .homepageinfo__songWidget button img{
     width:90%;
 }

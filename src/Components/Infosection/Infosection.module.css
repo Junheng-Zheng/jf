@@ -62,7 +62,7 @@
 .landing__information {
     background: url("src/assets/jffooter.png");
     background-size: cover;
-    overflow: hidden;
+    overflow:scroll;
     height:125px;
 }
 
@@ -84,8 +84,11 @@
     0% {
         transform: translateX(0%);
     }
-    100% {
+    50% {
         transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
     }
 }
 

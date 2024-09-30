@@ -18,16 +18,15 @@ export const Infosection = () => {
                 <img src="./slideshow15.png" alt="Slide 2" />
                 <img src="./slideshow14.png" alt="Slide 3" />
                 <img src="./slideshow6.png" alt="Slide 5" />
-                <img src="./slideshow2.png" alt="Slide 6" />
                 <img src="./slideshow11.png" alt="Slide 7" />
                 <img src="./slideshow12.png" alt="Slide 8" />
                 <img src="./slideshow8.png" alt="Slide 9" />
                 <img src="./slideshow3.png" alt="Slide 10" />
+                <img src="./slideshow2.png" alt="Slide 6" />
                 <img src="./slideshow7.png" alt="Slide 11" />
                 <img src="./slideshow5.png" alt="Slide 12" />
                 <img src="./slideshow10.png" alt="Slide 13" />
                 <img src="./slideshow13.png" alt="Slide 14" />
-                <img src="./slideshow9.png" alt="Slide 4" />
             </div>
         </div>
     </div>
