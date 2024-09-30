@@ -1,5 +1,8 @@
 import React, { useState, useRef } from 'react';
 import styles from "./Homepageinfo.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
+
 
 export const Homepageinfo = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -30,14 +33,15 @@ export const Homepageinfo = () => {
                     <p>Stephan Sanchez</p>
                 </div>
                 <button 
-                    className={`${styles.playPauseButton} ${isPlaying ? styles.playing : ''}`} 
+                    className={styles.playPauseButton} 
                     onClick={togglePlayPause}
                 >
-                     <img 
-                            src={isPlaying ? "./play.png" : "./pause.png"} 
-                            alt={isPlaying ? "./pause.png" : "Play"} 
-                        />
+                    <FontAwesomeIcon 
+                        icon={isPlaying ? faPause : faPlay} 
+                        style={{ marginLeft: isPlaying ? '0px' : '2px' }} // Conditional margin based on isPlaying
+                    />
                 </button>
+
                 {/* <button onClick={restartSong}>
                     {'restart'}
                 </button> */}
