@@ -63,23 +63,21 @@
     background: url("src/assets/jffooter.png");
     background-size: cover;
     overflow: hidden;
-    display:flex;
-    flex-direction: column;
-    gap:10px;
+    height:125px;
 }
 
 .information__images{
     display: flex;
     gap: 10px;
     padding: 0px 20px;
-    animation: slide 10s linear infinite;
+    animation: slide 20s linear infinite;
 }
 
 .information__imagestwo{
     display: flex;
     gap: 10px;
     padding: 0px 20px;
-    animation: slideReverse 10s linear infinite;
+    animation: slideReverse 30s linear infinite;
 }
 
 @keyframes slide {
@@ -100,12 +98,15 @@
     }
 }
 
-.landing__information img{
-    width:30%;
-    height:30%;
-    aspect-ratio: 1;
+.landing__information img {
+    width: 30%;
+    height: auto; /* Let the height adjust automatically */
+    aspect-ratio: 1; /* Maintain 1:1 aspect ratio */
+    object-fit: cover; /* Crop the image to fit the aspect ratio without distortion */
     border-radius: 10px;
+    filter: grayscale(100%) brightness(0.6);
 }
+
 .landing__information a{
     box-sizing: border-box;
     color:white;
