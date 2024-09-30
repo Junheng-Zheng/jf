@@ -106,7 +106,8 @@
     display: flex;
     justify-content: space-between;
     background-color: #1B1B1B;
-    color:white;
-    padding:15px 10px;
-    font-size: 16px;
+    color:#EBAC0A;
+    padding:10px 10px;
+    font-size: 25px;
+    align-items: center;
 }

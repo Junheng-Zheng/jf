@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import styles from "./Homepageinfo.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlay, faPause } from '@fortawesome/free-solid-svg-icons';
+import { faPlay, faPause, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 
 export const Homepageinfo = () => {
@@ -54,7 +54,7 @@ export const Homepageinfo = () => {
                 <div className={styles.postWidget__frame}></div>
                 <div className={styles.postWidget__information}>
                     <p>3/14/24</p>
-                    <p>💛</p>
+                    <FontAwesomeIcon icon={faHeart} />
                 </div>
             </div>
         </div>
