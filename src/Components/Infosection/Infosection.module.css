@@ -1,3 +1,5 @@
+
+
 .landing{
     background-color:black;
     background-repeat: no-repeat;
@@ -6,7 +8,6 @@
     flex-direction: column;
     color:white;
     justify-content: center;
-    padding:0px 20px 20px 20px;
 }
 
 .landing__header{
@@ -15,6 +16,7 @@
     justify-content: space-between;
     margin-top: auto;
     margin-bottom:auto;
+    padding:0px 20px 20px 20px;
 }
 
 .header__image{
@@ -57,12 +59,53 @@
     color:#FFA800;
 }
 
-.landing__information{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.landing__information {
+    background: url("src/assets/jffooter.png");
+    background-size: cover;
+    overflow: hidden;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
 }
 
+.information__images{
+    display: flex;
+    gap: 10px;
+    padding: 0px 20px;
+    animation: slide 10s linear infinite;
+}
+
+.information__imagestwo{
+    display: flex;
+    gap: 10px;
+    padding: 0px 20px;
+    animation: slideReverse 10s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+
+@keyframes slideReverse {
+    100% {
+        transform: translateX(0%);
+    }
+    0% {
+        transform: translateX(-200%);
+    }
+}
+
+.landing__information img{
+    width:30%;
+    height:30%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
 .landing__information a{
     box-sizing: border-box;
     color:white;

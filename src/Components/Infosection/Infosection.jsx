@@ -13,6 +13,40 @@ export const Infosection = () => {
             </div>
         </div>
         <div className={styles.landing__information}>
+            <div className={styles.information__images}>
+                <img src="./jflandingpage.jpg" alt="Slide 1"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 2"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 3"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 4"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 5"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 1"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 2"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 3"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 4"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 5"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 1"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 2"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 3"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 4"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 5"></img>
+            </div>
+            <div className={styles.information__imagestwo}>
+                <img src="./jflandingpage.jpg" alt="Slide 1"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 2"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 3"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 4"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 5"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 1"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 2"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 3"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 4"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 5"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 1"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 2"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 3"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 4"></img>
+                <img src="./jflandingpage.jpg" alt="Slide 5"></img>
+            </div>
         </div>
     </div>
 }
