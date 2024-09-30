@@ -30,7 +30,7 @@
 .homepageinfo__songWidget h3{
     color:#EBAC0A;
     font-size: 31px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .homepageinfo__songWidget p{
@@ -42,7 +42,7 @@
     visibility: hidden;
 }
 .homepageinfo__songWidget button{
-    color:white;
+    color:#1B1B1B;
     background-color:#EBAC0A;
     border:none;
     padding:5px 10px;
