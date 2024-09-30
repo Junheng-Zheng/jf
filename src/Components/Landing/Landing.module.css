@@ -2,7 +2,7 @@
     background-image: url("../../Assets/image.png");
     background-repeat: no-repeat;
     background-size: cover; 
-    height:480px;
+    height:440px;
     display: flex;
     flex-direction: column;
     color:#FFA800;
@@ -17,13 +17,13 @@
 
 .landing__header h1{
     display: inline-block;
-    font-size:80px;
+    font-size:70px;
     font-weight: 500;
 }
 
 .landing__header h3{
     display: inline-block;
-    font-size:30px;
+    font-size:25px;
     padding-bottom: 20px;
     font-weight: 500;
 }
