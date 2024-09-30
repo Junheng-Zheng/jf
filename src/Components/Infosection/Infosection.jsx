@@ -6,7 +6,7 @@ export const Infosection = () => {
         <div className={styles.landing__header}>
             <div className={styles.header__text}>
                 <h1>Our Gallery </h1>
-                <h3>All of memorys in <em> one </em>  place</h3>
+                <h3>All our memorys in <em> one </em>  place</h3>
             </div>
             <div className={styles.header__image}>
                 <img src="./allPhotos.gif"></img>
